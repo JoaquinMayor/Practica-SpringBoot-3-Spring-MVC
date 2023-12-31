@@ -30,7 +30,7 @@ public class UserRestController {
         userDto.setUser(user);
         userDto.setTitle("Hola Mundo Spring Boot");
         
-        return userDto; //El metodo retorna a la plantilla (dirección del html) con la cual va a trabajar, no se pone el .html, solo el nombre
+        return userDto; 
     }
 
     @GetMapping("/list")    
@@ -53,9 +53,9 @@ public class UserRestController {
         User user =new User("Joaquín", "Mayor");
         Map<String,Object> json = new HashMap<>();
 
-        json.put("title", "Hola Mundo Spring Boot"); //Con el model pasamos el valor, primero le ponemos un nombre y luego el valor
+        json.put("title", "Hola Mundo Spring Boot"); 
         json.put("user", user);
 
-        return json; //El metodo retorna a la plantilla (dirección del html) con la cual va a trabajar, no se pone el .html, solo el nombre
+        return json; 
     }
 }

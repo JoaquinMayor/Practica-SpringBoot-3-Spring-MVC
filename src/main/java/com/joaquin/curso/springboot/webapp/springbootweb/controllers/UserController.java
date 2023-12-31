@@ -17,9 +17,9 @@ import com.joaquin.curso.springboot.webapp.springbootweb.models.User;
 @Controller //Indica que es un controllador de spring
 public class UserController { //Los controladores reciben una peticion y devuelben una respuesta(un html, un apirest, una vista, etc)
 
-    //Con esto se le dice que maneja una petición del request, tienen distintos metodos los reques, metodo get, metodo post, put o delete
+    //Con esto se le dice que maneja una petición del request, tienen distintos metodos los request, metodo get, metodo post, put o delete
     //Los metodos post son para cuando enviamos datos en un formulario por ejemplo
-    //Eñ put es para editar una información existente
+    //El put es para editar una información existente
     @GetMapping("/details")//Para cualquier petición que es una ruta url o un enlace
     public String details(Model model){
         User user = new User("Joaquín", "Mayor");
