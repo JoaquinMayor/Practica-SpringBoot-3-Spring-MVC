@@ -31,7 +31,7 @@ public class RequestParamsController {
         return params;
     }
 
-    @GetMapping("/request")
+    @GetMapping("/request") //http://localhost:8090/api/params/request?code=200&text=Hola
     public ParamMixDto request(HttpServletRequest request){ //Esto es lo mismo a lo de arriba pero se hace de manera nativa
         ParamMixDto params = new ParamMixDto();
         Integer code = 0;
