@@ -10,7 +10,7 @@ public class HomeController {
     public String home(){ //Redirige cuando se pone en la barra de navegación hacia lo que pongamos en el return
 
         //return"redirect:/details";
-        return "forward:details"; // el forward la diferencia es que se mantiene dentro de la petición http
+        return "forward:details"; // El forward la diferencia es que se mantiene dentro de la petición http
         //y no se pierden los parametros dentro del request, tampoco cambia la ruta url,
         //ya que despacha a otra acción del controlador pero sin recargar la página
     }

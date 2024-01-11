@@ -15,7 +15,7 @@ import jakarta.servlet.http.HttpServletRequest;
 public class RequestParamsController {
     
     @GetMapping("/foo")
-    public ParamDto foo(@RequestParam(required = false, defaultValue = "Hola que tal") String message){ //la api se completa con la variable pasada por parametros en el navegador con el mismo nombre, despues del foo se pone ?message=mensaje
+    public ParamDto foo(@RequestParam(required = false, defaultValue = "Hola que tal") String message){ //La api se completa con la variable pasada por parámetros en el navegador con el mismo nombre, después del foo se pone ?message=mensaje
         
         ParamDto param = new ParamDto();
         param.setMessage(message);
