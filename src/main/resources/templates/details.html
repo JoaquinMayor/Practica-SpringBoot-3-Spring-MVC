@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org"> <!--Con esto pasamos la variables pasadas en el model-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org"> <!--Con esto pasamos las variables pasadas en el model-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +14,7 @@
         <li th:if="${user.email == null}" th:text="${'No tiene email'}"></li>
     </ul>
 
-    <a th:href="@{/list}">Ver listado</a> <!--El $ es para variables, el @ es para direcciones--> <!--Siempre que se quiera poner una variable hay que concatenar con el mas y entre '' la dirección-->
+    <a th:href="@{/list}">Ver listado</a> <!--El $ es para variables, el @ es para direcciones--> <!--Siempre que se quiera poner una variable hay que concatenar con el más y entre '' la dirección-->
     <a th:href="@{'/api/params/foo?message=' + ${title}}">Ver params</a>
     <a th:href="@{/api/params/foo?message=Feliz Navidad}">Ver params 2</a>
     <a th:href="@{/api/params/foo(message='Feliz Navidad')}">Ver params 3</a>

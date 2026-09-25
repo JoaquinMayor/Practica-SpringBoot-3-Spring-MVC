@@ -19,8 +19,8 @@ import com.joaquin.curso.springboot.webapp.springbootweb.models.dto.ParamDto;
 @RestController
 @RequestMapping("/api/var")
 public class PathVariableController {
-   //Con los value se inyectan confiuguraciones
-   @Value("${config.username}") //Se están inyectando, se están agregando los valores declarados en el aplication.properties
+   //Con los value se inyectan configuraciones
+   @Value("${config.username}") //Se están inyectando, se están agregando los valores declarados en el application.properties
     private String username;
     @Value("${config.message}")
     private String message;
@@ -56,7 +56,7 @@ public class PathVariableController {
         return json;
      }
 
-     @PostMapping("/create") //Siempre que se hace un post es importante tener un constructor vacío en el objeto y que los datos enviados coincida 100% con el objeto y tener los métodos set
+     @PostMapping("/create") //Siempre que se hace un post es importante tener un constructor vacío en el objeto y que los datos enviados coincidan 100% con el objeto y tener los métodos set
      public User create(@RequestBody User user){
         //Se hace algo con el usuario como un save en la base de datos
          user.setName(user.getName().toUpperCase());

@@ -14,8 +14,8 @@ import com.joaquin.curso.springboot.webapp.springbootweb.models.User;
 
 
 
-@Controller //Indica que es un controllador de spring
-public class UserController { //Los controladores reciben una petición y devuelben una respuesta(un html, un apirest, una vista, etc)
+@Controller //Indica que es un controlador de spring
+public class UserController { //Los controladores reciben una petición y devuelven una respuesta(un html, un apirest, una vista, etc)
 
     //Con esto se le dice que maneja una petición del request, tienen distintos métodos los request, método get, método post, put o delete
     //Los métodos post son para cuando enviamos datos en un formulario por ejemplo

@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 
 
-@RestController //Con esto lo convierte en un método andler para hacer apis, lo devuelve como un json
+@RestController //Con esto lo convierte en un método handler para hacer apis, lo devuelve como un json
 @RequestMapping("/api")//Sirve por si queremos usar métodos o direcciones con el mismo nombre, una ruta de primer nivel
 public class UserRestController {
 

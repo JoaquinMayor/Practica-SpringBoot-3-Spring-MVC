@@ -11,7 +11,7 @@ public class HomeController {
 
         //return"redirect:/details";
         return "forward:details"; // El forward la diferencia es que se mantiene dentro de la petición http
-        //y no se pierden los parametros dentro del request, tampoco cambia la ruta url,
+        //y no se pierden los parámetros dentro del request, tampoco cambia la ruta url,
         //ya que despacha a otra acción del controlador pero sin recargar la página
     }
 }
